@@ -1,0 +1,10 @@
+1.	Trading Alerts: Detect messages that contain trading-related keywords like "volume breakout," "bullrun," "reversal," etc., and flag them for user attention.
+2.	Scam Warning Detection: Identify and highlight messages warning about potential scams to alert new users and enhance community safety.
+3.	User Activity Tracking: Monitor and log user activity, such as joining, leaving, or being banned, to keep track of user behavior and interactions.
+4.	Automated Moderation: Detect and take action on inappropriate messages (e.g., spam, insults, scams) by integrating with moderation commands to warn or ban users automatically.
+5.	Sentiment Analysis: Analyze the sentiment of messages to gauge the overall mood of the group and identify potential issues or opportunities.
+6.	Trading Pattern Recognition: Identify and highlight discussions about specific trading patterns like "head and shoulders," "trendline," "neckline," etc.
+7.	Cryptocurrency Price Alerts: Monitor and notify users about significant price changes or specific price targets for popular cryptocurrencies.
+8.	FAQ and Resource Bot: Automatically respond to common questions with relevant information and direct users to resources like @TradingTips or @OffTopic.
+9.	Message Summary: Generate and send periodic summaries of key discussions and trading alerts to keep users informed even if they missed the live chat.
+10.	User Ranking and Reputation: Implement a system to rank users based on their contributions, activity, and adherence to community guidelines, fostering a positive environment.
