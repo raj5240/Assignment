@@ -1,0 +1,63 @@
+README File
+
+1.# Trading Alerts Feature
+
+## Overview
+The Trading Alerts feature is designed to automatically detect and flag messages that contain specific trading-related keywords or signals. This helps users stay informed about potential trading opportunities or important market events.
+
+## Features
+- Detects trading-related keywords in messages.
+- Scans multiple messages and identifies those that contain trading alerts.
+- Configurable list of trading keywords.
+
+### 1. Initialization
+Create an instance of the `TradingAlert` class and we can optionally pass a list of trading keywords to the constructor. If no keywords are provided, a default list will be used.
+alert_detector = TradingAlert()
+
+2. Detect Trading Alert in a Single Message
+   message = "I think the real crypto bullrun maybe starting now."
+   is_alert = alert_detector.detect_alert(message)
+   print(is_alert)  # Output: True
+
+3. Scan Multiple Messages
+    messages = [
+    "❗️New users are restricted until they ➡️ CLICK HERE and pass the captcha or be kicked.",
+    "I think the real crypto bullrun maybe starting now. See what happens over the next month or 2.",
+    "If we breakout of this pattern, it requires a significant volume surge.",
+    "Kraken allowed PayPal ser",
+    "Do you see wyckoff on chart?",
+    "The neckline held and we may see a reversal soon."
+]
+alert_messages = alert_detector.scan_messages(messages)
+for idx, alert_message in alert_messages:
+    print(f"Trading alert detected in message {idx}: {alert_message}")
+
+4.Sample Input and Output
+
+   messages = [
+    "❗️New users are restricted until they ➡️ CLICK HERE and pass the captcha or be kicked.",
+    "I think the real crypto bullrun maybe starting now. See what happens over the next month or 2.",
+    "If we breakout of this pattern, it requires a significant volume surge.",
+    "Kraken allowed PayPal ser",
+    "Do you see wyckoff on chart?",
+    "The neckline held and we may see a reversal soon."
+]
+
+alert_messages = alert_detector.scan_messages(messages)
+for idx, alert_message in alert_messages:
+    print(f"Trading alert detected in message {idx}: {alert_message}")
+
+5. Sample Output
+
+   Trading alert detected in message 1: I think the real crypto bullrun maybe starting now. See what happens over the next month or 2.
+   Trading alert detected in message 2: If we breakout of this pattern, it requires a significant volume surge.
+   Trading alert detected in message 5: The neckline held and we may see a reversal soon.
+
+
+
+
+
+
+
+
+
